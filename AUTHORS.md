@@ -1,0 +1,4 @@
+# this file lists all individuals having contributed content to the repository
+Hernan Echeverri <3883@holbertonschool.com>
+Andrés Felipe Pérez Martínez <3937@holbertonschool.com>
+
