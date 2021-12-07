@@ -35,10 +35,10 @@ void _end_of_file(int len, char *buff)
 }
 
 /**
- *_terminal - validate if terminal is run
+ *_isatty - validate if terminal is run
 **/
 
-void _terminal(void)
+void _isatty(void)
 {
 	if (isatty(STDIN_FILENO))
 		_puts("#cisfun$ ");
