@@ -35,12 +35,12 @@ return (value);
 return (0);
 }
 
-**
+/**
 * add_node_end - adds a new node at the end of a list_t list
 * @head: pointer to pointer to our linked list
 * @str: pointer to string in previous first node
 * Return: address of the new element/node
- */
+*/
 
 list_path *add_node_end(list_path **head, char *str)
 {
