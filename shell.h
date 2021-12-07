@@ -32,7 +32,7 @@ extern char **environ;
 *@p: pointer to next node to create linked list
 **/
 
-typedef struc list_path
+typedef struct list_path
 {
 char *dir;
 struct list_path *p;
