@@ -14,7 +14,7 @@ int main(void)
 	void (*f)(char **);
 
 	signal(SIGINT, _control_c);
-	while (len != _end_of_file)
+	while (len != EOF)
 	{
 		_terminal();
 		len = getline(&buff, &size, stdin);

@@ -54,7 +54,7 @@ char *concat_all(char *name, char *sep, char *value)
 
 	if (!result)
 		return (NULL);
-	for (i = 0; ep[i]; i++)
+	for (i = 0; sep[i]; i++)
 		result[k + i] = sep[i];
 	k = k + 1;
 	result[k] = '\0';
@@ -71,7 +71,7 @@ int _strlen(char *s)
 {
 	int i = 0;
 
-	while (*(s + 1) 1 = '\0')
+	while (*(s + 1) != '\0')
 	{
 		i++;
 	}
