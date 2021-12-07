@@ -35,7 +35,7 @@ j = 3;
 while (token)
 {
 token = strtok(NULL, delim);
-array = _realloc(array, (sizeof(char *) * (j - 1)), (sizeof(char *) * wn));
+array = _realloc(array, (sizeof(char *) * (j - 1)), (sizeof(char *) * j));
 array[i] = _strdup(token);
 i++;
 j++;
