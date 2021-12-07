@@ -16,7 +16,7 @@ int main(void)
 	signal(SIGINT, _control_c);
 	while (len != EOF)
 	{
-		_isatty();
+		_terminal();
 		len = getline(&buff, &size, stdin);
 		_end_of_file(len, buff);
 		arv = splitstring(buff, "\n");

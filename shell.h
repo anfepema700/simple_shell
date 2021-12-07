@@ -17,7 +17,7 @@ void _puts(char *str);
 int _strlen(char *s);
 char *_strdup(char *str);
 char *concat_all(char *name, char *sep, char *value);
-void terminal(void);
+void _terminal(void);
 void _end_of_file(int len, char *buff);
 void _control_c(int sig_num);
 char **splitstring(char *str, const char *delim);
