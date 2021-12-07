@@ -7,15 +7,14 @@
 
 int main(void)
 {
-	ssize_t len= 0; 
+	ssize_t len = 0;
 	char *buff = NULL, *value, *pathname, **arv;
 	size_t size = 0;
 	list_path *head = '\0';
 	void (*f)(char **);
 
 	signal(SIGINT, _control_c);
-
-	while(len != _end_of_file)
+	while (len != _end_of_file)
 	{
 		_terminal();
 		len = getline(&buff, &size, stdin);
@@ -29,15 +28,14 @@ int main(void)
 			head = linkpath(value);
 			pathname = _which(arv[0], head);
 			f = checkbuild(arv);
-
-			if(f)
+			if (f)
 			{
 				free(buff);
 				f(arv);
 			}
-			else if(!pathname)
+			else if (!pathname)
 				execute(arv);
-			else if(pathname)
+			else if (pathname)
 			{
 				free(arv[0]);
 				arv[0] = pathname;
@@ -48,5 +46,5 @@ int main(void)
 	free_list(head);
 	freearv(arv);
 	free(buff);
-	return(0);
+	return (0);
 }

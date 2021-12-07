@@ -1,4 +1,4 @@
-#ifdef SHELL_H
+#ifndef SHELL_H
 #define SHELL_H
 
 #include <stdio.h>
@@ -27,16 +27,16 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 extern char **environ;
 
 /**
- *struct list_path - linked list with PATH 
- *@dir: directory into PATH
- *@p: pointer to next node to create linked list
- **/
+*struct list_path - linked list with PATH
+*@dir: directory into PATH
+*@p: pointer to next node to create linked list
+**/
 
 typedef struc list_path
 {
 char *dir;
 struct list_path *p;
-}list_path;
+} list_path;
 
 char *_getenv(const char *name);
 list_path *add_node_end(list_path **head, char *str);
@@ -53,7 +53,7 @@ typedef struct mybuild
 {
 	char *name;
 		void (*func)(char **);
-}mybuild;
+} mybuild;
 
 void(*checkbuild(char **arv))(char **arv);
 int _atoi(char *s);

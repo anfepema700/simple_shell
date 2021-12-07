@@ -23,7 +23,7 @@ void _end_of_file(int len, char *buff)
 {
 	(void)buff;
 
-	if(len== -1)
+	if (len == -1)
 	{
 		if (isatty(STDIN_FILENO))
 		{
@@ -38,7 +38,7 @@ void _end_of_file(int len, char *buff)
  *_terminal - validate if terminal is run
 **/
 
-void _terminal()
+void _terminal(void)
 {
 	if (isatty(STDIN_FILENO))
 		_puts("#cisfun$ ");
