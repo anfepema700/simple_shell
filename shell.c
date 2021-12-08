@@ -46,7 +46,7 @@ size_t bufferinput = 0;
 do {
 if (isatty(0))
 {
-write(1, JR_PROMPT, 9);
+write(1, PROMPT, 9);
 }
 input = read_input(&input, &bufferinput);
 args = break_input(input);
