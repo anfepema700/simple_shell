@@ -1,7 +1,7 @@
 #ifndef SIMPLE_SHELL_H
 #define SIMPLE_SHELL_H
 
-#define JR_PROMPT "#cisfun$ "
+#define PROMPT "#cisfun$ "
 
 #include <string.h>
 #include <stdlib.h>
