@@ -11,6 +11,8 @@ int i, j;
 mybuild T[] = {
 {"exit", exitt},
 {"env", env},
+{"setenv", _setenv},
+{"unsetenv", _unsetenv},
 {NULL, NULL}
 };
 
