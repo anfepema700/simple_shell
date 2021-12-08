@@ -29,4 +29,5 @@ int str_comp(char *str_a, char *str_b);
 char *getVariableFromEnviron(char *variableName);
 char *str_concat(char *s1, char *s2);
 char **tokenize(char *string);
+
 #endif
