@@ -122,6 +122,6 @@ End the execution of ./hsh program
 Type **exit** at the prompt of ./hsh program
 The prompt get back to the TERMINAL
 
-# FLOWCHAR
+# FLOWCHART
 
 ![](https://github.com/josenoguera-94/proyecto_veterinaria/blob/sprint2/HernanEcheverriR/simpleshell.png)
