@@ -75,14 +75,14 @@ Note: if you dont give the PATH an error message will indicate Command not found
 
 ### Non interactive mode
 
-At the TERMINAL prompt outside the hsh program type: `echo "/bin/ls" | ./hsh`
+At the TERMINAL prompt outside the hsh program type: `echo "/bin/ls" | valgrind ./hsh`
 
 That will send the instructions via pipe to ./hsh as arguments
 
 The result should be the same as typing /bin/ls directly in the ./hsh program
 
 ### Non interactive mode with arguments
-At the TERMINAL prompt outside the hsh program type: `echo "/bin/ls -l" | ./hsh`
+At the TERMINAL prompt outside the hsh program type: `echo "/bin/ls -l" | valgrind ./hsh`
 
 That will send the instructions via pipe to ./hsh as arguments
 
