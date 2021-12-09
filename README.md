@@ -124,5 +124,4 @@ The prompt get back to the TERMINAL
 
 # FLOWCHAR
 
-![image-20211208191535689](C:\Users\ANFEPEMA\AppData\Roaming\Typora\typora-user-images\image-20211208191535689.png)
-
+https://drive.google.com/file/d/1F1THPiKPYfIzYL8r3loz65fQb-v0a67_/view
